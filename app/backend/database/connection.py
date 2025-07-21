@@ -4,9 +4,9 @@ from sqlalchemy.orm import sessionmaker
 import os
 from pathlib import Path
 
-# Get the backend directory path
-BACKEND_DIR = Path(__file__).parent.parent
-DATABASE_PATH = BACKEND_DIR / "hedge_fund.db"
+# Get the project root directory path (two levels up from backend/database/)
+PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
+DATABASE_PATH = PROJECT_ROOT / "hedge_fund.db"
 
 # Database configuration - use absolute path
 DATABASE_URL = f"sqlite:///{DATABASE_PATH}"

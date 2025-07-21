@@ -253,7 +253,7 @@ cd app && chmod +x run.sh && ./run.sh
 cd app
 
 # Run the app
-\.run.bat
+run.bat
 ```
 
 **That's it!** These scripts will:
